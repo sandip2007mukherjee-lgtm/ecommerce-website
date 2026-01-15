@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NexTrade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>NexTrade</h1>
+  <input type="text" id="search" placeholder="Search products..." onkeyup="searchProduct()">
+  <select onchange="filterCategory(this.value)">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="fashion">Fashion</option>
+  </select>
+  <a href="cart.html" class="cart-btn">🛒 Cart</a>
+</header>
+
+<section class="products">
+
+  <div class="product electronics">
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+    <h3>Smart Watch</h3>
+    <p>₹2999</p>
+    <button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+  </div>
+
+  <div class="product electronics">
+    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+    <h3>Headphones</h3>
+    <p>₹1999</p>
+    <button onclick="addToCart('Headphones',1999)">Add to Cart</button>
+  </div>
+
+  <div class="product fashion">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+    <h3>Shoes</h3>
+    <p>₹2499</p>
+    <button onclick="addToCart('Shoes',2499)">Add to Cart</button>
+  </div>
+
+  <div class="product fashion">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+    <h3>Jacket</h3>
+    <p>₹3499</p>
+    <button onclick="addToCart('Jacket',3499)">Add to Cart</button>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
