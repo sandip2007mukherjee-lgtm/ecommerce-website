@@ -72,3 +72,14 @@ header input, header select {
 .product button:hover {
   background: #f7ca00;
 }
+.cart-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cart-item button {
+  width: 40px;
+  margin: 0 5px;
+}
